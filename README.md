@@ -23,12 +23,14 @@
    
    `https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page`  
    Place these in the Data directory with the other shapefiles.
+
+   An image of the specific files I downloaded can be seen in the Workflow Documentation.
    
-5. Run the script:  
+6. Run the script:  
 
    `python NYCTaxiTrip_Pipeline.py`
 
-6. The script will merge the taxi trip data, clean it up, spatially join the trip records with the Taxi Zone and NTA data, compute the number of trips per neighborhood, average trip distance, and fare by neighborhood. These calculations will be output to a shapefile and CSV in the same directory as the NTA shapefile. The results can be viewed in QGIS or as a CSV with the corresponding neighborhoods.
+7. The script will merge the taxi trip data, clean it up, spatially join the trip records with the Taxi Zone and NTA data, compute the number of trips per neighborhood, average trip distance, and fare by neighborhood. These calculations will be output to a shapefile and CSV in the same directory as the NTA shapefile. The results can be viewed in QGIS or as a CSV with the corresponding neighborhoods.
 The script will also calculate the peak hours of operation and print a statement to show these results. 
 
 For the data listed above, I found the peak hours of operation were between 18:00 and 19:00.
